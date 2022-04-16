@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no">
+		<title>Parkfinder</title>
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<style type="text/css">
+			body{
+				height: 100vh;
+				background-image: url(img/bg.png);
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="head">
+			<div class="img">
+				<img src="img/logo.png">
+			</div>
+			<p>Parkfinder</p>
+		</div>
+		<!--登陆-->
+		<form action="#">
+			<div class="item">
+				<input type="text" name="name" maxlength="11" placeholder="Phone number/Email" autocomplete="off" class="name">
+			</div>
+			<div class="item">
+				<input type="password" name="password" placeholder="Password" autocomplete="off" class="password">
+			</div>
+			<div class="submit"><button>Log In</button></div>
+			<div class="rember">
+				<p>forget password？</p>
+				<a href="register.html">memberRegister</a>
+			</div>
+		</form>
+		
+	</body>
+	
+	<script src="js/flexible.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('.submit button').click(function(){
+			window.location.href = "index.html";
+		})
+	</script>
+	
+</html>
